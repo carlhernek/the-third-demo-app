@@ -1,0 +1,23 @@
+<form [formGroup]="signinForm" (ngSubmit)="onSubmit(signinForm.value)">
+  <div class="col-10 col-md-8 col-lg-6 col-xl-5">
+    <input
+      aria-label="Enter your email."
+      aria-labelledby="email"
+      formControlName="email"
+      id="email"
+      type="text"
+      placeholder="Email"
+    />
+    <input
+      aria-label="Enter your password."
+      aria-labelledby="password"
+      formControlName="password"
+      id="password"
+      type="password"
+      placeholder="Password"
+    />
+  </div>
+
+  <!-- set type="submit" to activate form -->
+  <button routerLink="../dashboard">Sign In</button>
+</form>
