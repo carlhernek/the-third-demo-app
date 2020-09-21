@@ -1,11 +1,24 @@
+$clr-primary: #2b2b2b;
+$clr-secondary: white;
+
 #header {
   height: 8rem;
+  background-color: $clr-primary;
+  color: $clr-secondary;
 }
 
 #portrait {
-  height: 6rem;
+  height: 500px;
 }
 
 #footer {
-  height: 4rem;
+  height: 2rem;
+  position: fixed;
+  bottom: 0;
+  background-color: $clr-primary;
+  color: $clr-secondary;
+}
+
+#lorem {
+  padding: 3rem 1rem;
 }

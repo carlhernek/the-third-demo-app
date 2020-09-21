@@ -1,23 +1,31 @@
-<form [formGroup]="signinForm" (ngSubmit)="onSubmit(signinForm.value)">
-  <div class="col-10 col-md-8 col-lg-6 col-xl-5">
-    <input
-      aria-label="Enter your email."
-      aria-labelledby="email"
-      formControlName="email"
-      id="email"
-      type="text"
-      placeholder="Email"
-    />
-    <input
-      aria-label="Enter your password."
-      aria-labelledby="password"
-      formControlName="password"
-      id="password"
-      type="password"
-      placeholder="Password"
-    />
+<div class="container-fluid row justify-content-center p-0 m-0 vh-100">
+  <div
+    class="col-10 col-md-8 col-lg-6 col-xl-2 d-flex justify-content-center align-items-center"
+  >
+    <form
+      [formGroup]="signinForm"
+      (ngSubmit)="onSubmit(signinForm.value)"
+      class="sign-in-form"
+    >
+      <h1 class="mb-4">Demo Backoffice</h1>
+      <input
+        aria-label="Enter your email."
+        aria-labelledby="email"
+        formControlName="email"
+        id="email"
+        type="text"
+        placeholder="Email"
+      />
+      <input
+        aria-label="Enter your password."
+        aria-labelledby="password"
+        formControlName="password"
+        id="password"
+        type="password"
+        placeholder="Password"
+      />
+      <!-- set type="submit" to activate form -->
+      <button routerLink="../dashboard" class="btn">Sign In</button>
+    </form>
   </div>
-
-  <!-- set type="submit" to activate form -->
-  <button routerLink="../dashboard">Sign In</button>
-</form>
+</div>
